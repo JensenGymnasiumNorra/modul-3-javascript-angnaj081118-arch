@@ -27,10 +27,10 @@ if (Wow === Ransom) {
 answer1 = true; 
 Hint.textContent = "Slider 1 is Correct!";
 } else if(Wow < Ransom){
-answer1 = true; 
+answer1 = false; 
 Hint.textContent = "Too low!"; 
 } else if (Wow > Ransom) { 
-    answer1 = true; 
+    answer1 = false; 
     Hint.textContent = "Too high!"; } }); 
 
 
@@ -104,12 +104,15 @@ Ransom2 = Math.floor(Math.random() * Slider2.max) + 1;
 Slider3.max = Number(Slider3.max) + 100;
 console.log(Slider3.max);
 Ransom3 = Math.floor(Math.random() * Slider3.max) + 1;
+answer1 = false;
+answer2 = false; 
+answer3 = false;
 } else {
 Hint.textContent = "You need to guess the right number on all sliders to change!"
 }
 }); 
 
-
+// Jag använder arrow functions, ifall du undrar vad "() =>" är för något,det är samma sak som functions. jag använde också booleans, alltså true och false i min kåd.
 
 
 
