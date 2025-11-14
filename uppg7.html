@@ -20,16 +20,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="weather.css">
     <title>Conditional Statements Example</title>
+    <style>
+ #Numba2 {margin-left: 130px;}
+ #Numba3 {margin-left: 120px;}
+ #label2{margin-left: 45px;}
+ #label3{margin-left: 40px;}
+ </style>
 </head>
 <body>
 
     <label for="numberSlider">Select number</label>
+    <label id="label2" for="numberSlider">Select number</label>
+     <label id="label3" for="numberSlider">Select number</label>
     <br>
-    <input type="range" id="valueSlider" min="0" max="100" value="25">
+    <input type="range" id="Slider" min="0" max="100" value="25">
+    <input type="range" id="Slider2" min="0" max="100" value="25">
+    <input type="range" id="Slider3" min="0" max="100" value="25">
     <br>
-    <span id="selectedNumber"></span>
+    <span id="Numba">0</span>
+    <span id="Numba2">0</span>
+     <span id="Numba3">0</span>
     <br>
-    <p id="hint"></p>
+    <p id="Hint"></p>
+    <br>
+    <button id="NewNumba">New number!</button>
+    <p id="pp"></p>
 
 
     <script src="uppg7.js"></script>

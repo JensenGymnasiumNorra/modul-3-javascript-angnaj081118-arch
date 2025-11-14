@@ -14,9 +14,23 @@
     <button onclick="showCarbonara()">Show carbonara ingredients</button>
     <button onclick="showPizza()">Show pizza ingredients</button>
 
-    <div id="ingredients"></div>
+      <p id="Carbonara">carbonara is made with pancetta or bacon, eggs, Parmesan, a little olive oil, salt and pepper</p>
+    <p id="Pizza">dough and pinnapple</p>
 
     <script>
+      let carbonara = document.getElementById("Carbonara");
+            let pizza = document.getElementById("Pizza");
+
+      function showCarbonara() {
+        carbonara.style.display = "block";
+        pizza.style.display = "none";
+  }
+   function showPizza() {
+        carbonara.style.display = "none";
+        pizza.style.display = "block";
+
+      }
+    
       // TODO: Skapa funktionerna showCarbonara() och showPizza() för att visa ingredienserna för respektive recept i diven ingredients
     </script>
   </body>

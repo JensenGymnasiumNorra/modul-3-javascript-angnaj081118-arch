@@ -7,14 +7,22 @@
   </head>
   <body>
     <button onclick="toggleVisibility()">Toggle Visibility</button>
+    <button onclick="Wow()">Click for not apple</button>
+    <p id="Tag">Im gonna be gone!</p>
+    <img id="Chi" src="https://cdn.pixabay.com/photo/2016/02/23/17/42/orange-1218158_960_720.png" style="display: none;">
     <!-- TODO: Skapa ett element som visas/döljs när knappen klickas på -->
   </body>
 
   <script>
     function toggleVisibility() {
-      var element = document.getElementById("toggleElement");
-      element.style.display =
+      var element = document.getElementById("Tag");
+      element.style.display = 
         element.style.display === "none" ? "block" : "none";
+    }
+    function Wow() {
+    var element = document.getElementById("Chi");
+    element.style.display = 
+    element.style.display === "block" ? "none" : "block";
     }
   </script>
 </html>

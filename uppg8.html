@@ -1,7 +1,9 @@
 <!-- 
     Om du är färdig med de 5 första uppgifterna kan du på egen hand kolla upp och testa mer avancerad JS
-T.ex. hur man loopar eller gör if-satser i JS
+T.ex. hur man loopar eller gör if-satser i JS   
 -->
+
+<!-- använde redan if i uppg7 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +12,44 @@ T.ex. hur man loopar eller gör if-satser i JS
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uppgift 6+: Onward</title>
   </head>
-  <body></body>
+  <body>
+  <button id="oops">Click to freeze web!</button>
+  <button id="hoop">Click to count bunnies!</button>
+  <button id="woof">Click to count puppies!</button>
 
-  <script></script>
+  <div id="text"></div>
+
+</body>
+
+  <script>
+let oops = document.getElementById('oops'); 
+let hoop = document.getElementById('hoop');
+let woof = document.getElementById('woof');
+let text = document.getElementById('text');
+
+
+oops.addEventListener('click', () => {
+while (true) {
+console.log = ("boo!");
+} }); 
+
+
+hoop.addEventListener('click', () => { 
+text.innerHTML = "";
+let bunny = 1; 
+ while(bunny <= 10) {
+  text.innerHTML += (`<br>Bunny number ${bunny}!<br>`);
+  bunny++;
+  }
+});
+
+woof.addEventListener('click', () => { 
+ text.innerHTML = "";
+ let pop = 1
+  for(pop = 1; pop <= 3; pop++) {
+  text.innerHTML += (`<br>Puppy number ${pop}!<br>`);
+  }
+});
+
+  </script>
 </html>
